@@ -1,0 +1,19 @@
+<form>
+  <mat-form-field>
+    <input
+      type="text"
+      placeholder="Country"
+      matInput
+      [formControl]="countryControl"
+      [matAutocomplete]="auto"
+    />
+    <mat-autocomplete #auto="matAutocomplete">
+      <mat-option
+        *ngFor="let option of filteredVaules | async"
+        [value]="option"
+      >
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>
