@@ -1,3 +1,17 @@
 p {
   font-family: Lato;
 }
+
+.examples > div {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  padding: 7px 16px;
+  display: table;
+  border-radius: 15px;
+  margin: 2px;
+}
+.examples > div:hover {
+  background-color: rgb(208, 243, 10);
+  color: black;
+}
